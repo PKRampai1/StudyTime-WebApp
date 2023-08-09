@@ -1,0 +1,46 @@
+﻿@model StudyTime.Models.UpdateModuleViewModule
+
+<h1>track study hours for module</h1>
+<form method="post" action="view" class="mt-5">
+  <div class="mb-3">
+    <label for="" class="form-label"> Module ID</label>
+    <input type="text" class="form-control" asp-for="ID" readonly>
+  </div>
+    <div class="mb-3" hidden>
+    <label for="" class="form-label"> Module Code</label>
+    <input type="text" class="form-control" asp-for="moduleCode" readonly>
+  </div>
+   <div class="mb-3">
+    <label for="" class="form-label"> Module Name</label>
+    <input type="text" class="form-control" asp-for="moduleName" readonly>
+  </div>
+   <div class="mb-3">
+    <label for="" class="form-label"> Module Credit</label>
+    <input type="number" class="form-control" asp-for="moduleCredit" readonly>
+  </div>
+   <div class="mb-3">
+    <label for="" class="form-label"> Module Class hours</label>
+    <input type="number" class="form-control" asp-for="moduleHours" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="" class="form-label">Enter start date</label>
+    <input type="date" class="form-control" asp-for="SemesterStartDate" readonly>
+  </div>
+ <div class="mb-3">
+    <label for="" class="form-label"> number of weeks in the semester</label>
+    <input type="number" class="form-control" asp-for="semesterWeeks" readonly>
+  </div>
+   
+
+   <div class="mb-3">
+
+    <label for="" class="form-label"> enter time studied</label>
+    <input type="number" class="form-control" asp-for="moduleSelfStudy" >
+  </div>
+   
+  
+
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>     <a asp-action="Index">Back to List</a>
+
+</form>

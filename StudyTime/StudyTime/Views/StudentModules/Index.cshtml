@@ -1,0 +1,80 @@
+﻿@model IEnumerable<StudyTime.Models.StudentModule>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+<h1>Modules</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-hover">
+    <thead>
+        <tr class="table-secondary">
+           
+            <th>
+                @Html.DisplayNameFor(model => model.moduleCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.moduleName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.moduleCredit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.semesterWeeks)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.moduleHours)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.moduleSelfStudy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SemesterStartDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Where(n =>  n.Email ==User.Identity.Name )) {
+        <tr class="table-primary">
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.moduleCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.moduleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.moduleCredit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.semesterWeeks)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.moduleHours)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.moduleSelfStudy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SemesterStartDate)
+            </td>
+            <td>
+                @*<a asp-action="Edit" asp-route-id="@item.ID">Edit</a> *@
+                | <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+@*                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>|
+*@            
+                <a asp-action="view" asp-route-id="@item.ID">Track Studies</a>|<a asp-action="NewWeek" asp-route-id="@item.ID">Start New Week</a>|<a asp-action="Graph" asp-route-id="@item.ID">View Graph</a>
+                
+                
+
+            </td>
+        </tr>
+        <br />
+}
+    </tbody>
+</table>

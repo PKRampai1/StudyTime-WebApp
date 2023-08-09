@@ -1,0 +1,12 @@
+C:\Users\Phumudzo Rampai\Videos\PoeLib\PoeLib\bin\Debug\net6.0-windows\PoeLib.deps.json
+C:\Users\Phumudzo Rampai\Videos\PoeLib\PoeLib\bin\Debug\net6.0-windows\PoeLib.dll
+C:\Users\Phumudzo Rampai\Videos\PoeLib\PoeLib\bin\Debug\net6.0-windows\PoeLib.pdb
+C:\Users\Phumudzo Rampai\Videos\PoeLib\PoeLib\obj\Debug\net6.0-windows\PoeLib.csproj.AssemblyReference.cache
+C:\Users\Phumudzo Rampai\Videos\PoeLib\PoeLib\obj\Debug\net6.0-windows\PoeLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Phumudzo Rampai\Videos\PoeLib\PoeLib\obj\Debug\net6.0-windows\PoeLib.AssemblyInfoInputs.cache
+C:\Users\Phumudzo Rampai\Videos\PoeLib\PoeLib\obj\Debug\net6.0-windows\PoeLib.AssemblyInfo.cs
+C:\Users\Phumudzo Rampai\Videos\PoeLib\PoeLib\obj\Debug\net6.0-windows\PoeLib.csproj.CoreCompileInputs.cache
+C:\Users\Phumudzo Rampai\Videos\PoeLib\PoeLib\obj\Debug\net6.0-windows\PoeLib.dll
+C:\Users\Phumudzo Rampai\Videos\PoeLib\PoeLib\obj\Debug\net6.0-windows\refint\PoeLib.dll
+C:\Users\Phumudzo Rampai\Videos\PoeLib\PoeLib\obj\Debug\net6.0-windows\PoeLib.pdb
+C:\Users\Phumudzo Rampai\Videos\PoeLib\PoeLib\obj\Debug\net6.0-windows\ref\PoeLib.dll

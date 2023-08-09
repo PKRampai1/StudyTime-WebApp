@@ -1,0 +1,56 @@
+﻿@model StudyTime.Models.UpdateModuleViewModule
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Are you Sure you want to start a new week?</h1>
+<h2>clicking confirm will reset al, values and study hours for the previous/current week will be lost</h2>
+<form method="post" action="view" class="mt-5">
+  <div class="mb-3" hidden>
+    <label for="" class="form-label"> Module ID</label>
+    <input type="text" class="form-control" asp-for="ID" readonly>
+  </div>
+    <div class="mb-3" hidden>
+    <label for="" class="form-label"> Module Code</label>
+    <input type="text" class="form-control" asp-for="moduleCode" readonly>
+  </div>
+   <div class="mb-3" hidden>
+    <label for="" class="form-label"> Module Name</label>
+    <input type="text" class="form-control" asp-for="moduleName" readonly>
+  </div>
+   <div class="mb-3" hidden>
+    <label for="" class="form-label"> Module Credit</label>
+    <input type="number" class="form-control" asp-for="moduleCredit" readonly>
+  </div>
+   <div class="mb-3" hidden>
+    <label for="" class="form-label"> Module Class hours</label>
+    <input type="number" class="form-control" asp-for="moduleHours" readonly>
+  </div>
+  <div class="mb-3" hidden>
+    <label for="" class="form-label">Enter start date</label>
+    <input type="date" class="form-control" asp-for="SemesterStartDate" readonly>
+  </div>
+ <div class="mb-3" hidden>
+    <label for="" class="form-label"> number of weeks in the semester</label>
+    <input type="number" class="form-control" asp-for="semesterWeeks" readonly>
+  </div>
+   <div class="mb-3" hidden>
+        <label for="" class="form-label"> Module Self Study hours</label>
+    <label type="number" class="form-control" asp-for="moduleSelfStudy" ></label>
+  </div>
+
+   <div class="mb-3"hidden>
+
+    <label for="" class="form-label"> enter time studied</label>
+    <input type="number" class="form-control" asp-for="moduleSelfStudy" >
+  </div>
+   
+
+
+  </div>
+  <button type="submit" class="btn btn-primary">Confirm</button>     <a asp-action="Index">Back to List</a>
+
+  
+</form>

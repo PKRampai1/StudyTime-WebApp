@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-StudyTime-e7c769c4-c8a1-453f-8575-08b5a9fb08d9</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Models\addModuleViewModel.cs~RF199e0c98.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\StudentModules\Create.cshtml" />
+    <None Include="Views\StudentModules\Delete.cshtml" />
+    <None Include="Views\StudentModules\Details.cshtml" />
+    <None Include="Views\StudentModules\Edit.cshtml" />
+    <None Include="Views\StudentModules\Graph.cshtml" />
+    <None Include="Views\StudentModules\Index.cshtml" />
+    <None Include="Views\StudentModules\NewWeek.cshtml" />
+    <None Include="Views\StudentModules\view.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.11" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PoeLib">
+      <HintPath>..\..\..\..\Videos\PoeLib\PoeLib\bin\Debug\net6.0-windows\PoeLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

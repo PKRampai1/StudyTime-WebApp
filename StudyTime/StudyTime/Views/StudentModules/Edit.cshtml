@@ -1,0 +1,69 @@
+﻿@model StudyTime.Models.StudentModule
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>StudentModule</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="moduleCode" class="control-label"></label>
+                <input asp-for="moduleCode" class="form-control" />
+                <span asp-validation-for="moduleCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="moduleName" class="control-label"></label>
+                <input asp-for="moduleName" class="form-control" />
+                <span asp-validation-for="moduleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="moduleCredit" class="control-label"></label>
+                <input asp-for="moduleCredit" class="form-control" />
+                <span asp-validation-for="moduleCredit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="semesterWeeks" class="control-label"></label>
+                <input asp-for="semesterWeeks" class="form-control" />
+                <span asp-validation-for="semesterWeeks" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="moduleHours" class="control-label"></label>
+                <input asp-for="moduleHours" class="form-control" />
+                <span asp-validation-for="moduleHours" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="moduleSelfStudy" class="control-label"></label>
+                <input asp-for="moduleSelfStudy" class="form-control" />
+                <span asp-validation-for="moduleSelfStudy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SemesterStartDate" class="control-label"></label>
+                <input asp-for="SemesterStartDate" class="form-control" />
+                <span asp-validation-for="SemesterStartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
